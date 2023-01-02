@@ -6,17 +6,6 @@
 #         self.right = None
 
 class Solution(object):
-    def search(self, root, v):
-        if(root == None):
-            return False
-        if(root.val == v):
-            return True
-        
-        if(root.val<v):
-            self.search(root.left, v)
-        
-        if(root.val>v):
-            self.search(root.right, v)
     def lowestCommonAncestor(self, root, p, q):
         """
         :type root: TreeNode
