@@ -13,7 +13,7 @@ class Solution(object):
         result = []
         def preorder(tree):
             if tree:
-                #left, root, right
+                #root, left, right
                 result.append(tree.val) #add nodes
                 preorder(tree.left)
                 preorder(tree.right)
