@@ -15,6 +15,7 @@ class Solution(object):
             else:
                 freq[i] = 1
         
+        #store characters which only appear once
         freq2 = {}
         for i in freq:
             if freq[i]==1:
