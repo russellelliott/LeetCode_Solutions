@@ -46,4 +46,4 @@ class Solution(object):
 #turn to single string: https://www.simplilearn.com/tutorials/python-tutorial/list-to-string-in-python
 #insertion sort: https://www.geeksforgeeks.org/insertion-sort/
 #remove leading zeros with lstrip: https://copyassignment.com/python-remove-leading-zeros-5-easy-methods/
-#bubble sort
+#bubble sort: https://blogboard.io/blog/knowledge/python-sorted-lambda/
