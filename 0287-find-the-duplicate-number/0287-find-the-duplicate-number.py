@@ -15,6 +15,7 @@ class Solution(object):
             else:
                 freq[i] = 1
         
+        #iterate and find one that is duplicate
         for i in freq:
             if freq[i]>=2:
                 return i
