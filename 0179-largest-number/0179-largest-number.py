@@ -30,16 +30,6 @@ class Solution(object):
 
 		if not swapped:
 			break
-        '''for i in range(len(strings)):
-            key = strings[i]
-            j = i-1
-            #while j>=0 and len(strings[i])<len(strings[j]):
-            while j>=0 and shouldSwap(strings[i], strings[j]):
-                    strings[j+1] , strings[j] = strings[j] , strings[j+1]
-                    j-=1
- 
-        
-        print(strings)'''
         
         #merge all items into one string, no spaces
         result = ''.join(i for i in strings)
