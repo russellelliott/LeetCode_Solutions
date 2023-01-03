@@ -27,7 +27,7 @@ class Solution(object):
         curr = -1
         maxVal = -1
         for i in freq:
-            print(i, freq[i])
+            #print(i, freq[i])
             #1. is it more frequent?
             if freq[i]>maxVal:
                 curr = i
