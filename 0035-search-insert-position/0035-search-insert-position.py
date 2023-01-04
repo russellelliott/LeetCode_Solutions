@@ -8,9 +8,7 @@ class Solution(object):
         
         def binary(arr, target, low, high):
             if low>high:
-                print(low, high)
-                #return -1
-                return low
+                return low #low and high cross; low is the index
             
             mid = (low+high)/2
             if target == arr[mid]:
