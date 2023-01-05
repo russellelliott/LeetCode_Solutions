@@ -16,6 +16,7 @@ class Solution(object):
             length = length+1
         
         print("length: ", length)
+        #edge case for lists of length 1; will return empty list, as the middle node is the only node
         if length==1:
             return head.next
         
