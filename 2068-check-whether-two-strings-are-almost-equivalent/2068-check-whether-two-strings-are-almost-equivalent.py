@@ -40,3 +40,5 @@ class Solution(object):
         
         #false never invoked, return true
         return True
+
+#reused: https://leetcode.com/problems/top-k-frequent-elements/submissions/
