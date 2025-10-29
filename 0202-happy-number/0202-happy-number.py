@@ -1,25 +1,51 @@
 class Solution(object):
+    def testLoop(self, n):
+
+        digits_string = str(n)
+        digits = []
+        for digit in digits_string:
+            digits.append(digit)
+        
+        print(digits)
+
+        square_sum = 0
+        for digit in digits:
+            digit_int = int(digit)
+            square_sum+=digit_int**2
+        
+        print(square_sum)
+
+        return square_sum
+        
     def isHappy(self, n):
         """
         :type n: int
         :rtype: bool
         """
-        obtained = [] #results obtained
-        #helper function
         
-        def happy(number):
-            result = sum([int(x)**2 for x in str(number)])
-            obtained.append(number) #add number to list of obtained
-            return result
-        
-        #check if n is 1 and not in cycle
-        while n!=1 and n not in obtained:
-            n = happy(n)
-        
-        return n==1
-            
-#split list into digits: https://bobbyhadz.com/blog/python-split-integer-into-digits
-#sum list: https://www.geeksforgeeks.org/sum-function-python/
 
-#note; if we see a number repeated, we know for sure it's false
-#resued: https://leetcode.com/problems/binary-tree-inorder-traversal
+        # 1. split n into digits
+        # 2. square
+        # 3. sum sqaures into new number
+        # 4. repeat step 1 loop
+
+        #detecting a cycle?
+        # case where cycle?
+        # - check if cycle, numbers
+        # list could be sufficient, but something more optimized for search
+        #dictionary could work? search by keys
+        #dictionary with just keys (extra memory)
+        #set (unique list)
+        #know it'll be 1; check if digits sum to one
+
+
+        current_number = n
+        numbers_set = set()
+        while(current_number!=1):
+            current_number = self.testLoop(current_number)
+            print(current_number)
+            if(current_number in numbers_set):
+                return False
+            numbers_set.add(current_number)
+        
+        return True
